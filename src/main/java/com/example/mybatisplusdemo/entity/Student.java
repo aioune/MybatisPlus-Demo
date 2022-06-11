@@ -1,7 +1,5 @@
 package com.example.mybatisplusdemo.entity;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 import lombok.Data;
 
@@ -9,31 +7,26 @@ import lombok.Data;
  * student
  * @author 
  */
-@ApiModel(value="com.example.mybatisplusdemo.entity.Student")
 @Data
 public class Student implements Serializable {
     /**
      * 主键ID,学号
      */
-    @ApiModelProperty(value="主键ID,学号")
     private Long id;
 
     /**
      * 姓名
      */
-    @ApiModelProperty(value="姓名")
     private String name;
 
     /**
      * 年龄
      */
-    @ApiModelProperty(value="年龄")
     private Integer age;
 
     /**
      * 邮箱
      */
-    @ApiModelProperty(value="邮箱")
     private String email;
 
     private static final long serialVersionUID = 1L;
